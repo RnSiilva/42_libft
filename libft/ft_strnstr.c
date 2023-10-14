@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 16:18:52 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:25:46 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/14 21:51:35 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/14 22:15:03 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	size_t	n;
+
+	if (*little == '\0')
+		return ((char *)big);
+	n = strlen(little);
+	while (*big && n <= len)
+	{
+		if (*big == *little && strncmp(big, little, n) == 0)
+			return ((char *)big);
+		big++;
+		len--;
+	}
+	return (NULL);
 }
 
 // int	main(void)
 // {
-// 	char	c;
-
-// 	c = 'R';
-// 	if (ft_isalpha(c))
-// 		printf("The char '%c' is alphabetic\n", c);
-// 	else
-// 		printf("The char '%c' is not alphabetic\n", c);
+// 	char	*str = "42School is a school of programming";
+	
+// 	printf("%s", ft_strnstr(str, "is", 15));
+// 	return (0);
 // }

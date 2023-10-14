@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 16:18:52 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:25:46 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/14 23:23:37 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/14 23:46:14 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	void	*ptr;
+
+	ptr = malloc(nmemb * size);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, nmemb * size);
+	return (ptr);
 }
 
 // int	main(void)
 // {
-// 	char	c;
+// 	int	*p;
+// 	p = (int *)ft_calloc(5, sizeof(int));
 
-// 	c = 'R';
-// 	if (ft_isalpha(c))
-// 		printf("The char '%c' is alphabetic\n", c);
-// 	else
-// 		printf("The char '%c' is not alphabetic\n", c);
+// 	int	i = -1;
+// 	while (++i < 5)
+// 		printf("Adress p%i: %p | Value p%i: %i\n", i, (p+i), i, *(p+i));
+// 	return (0);
 // }

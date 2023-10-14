@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 16:18:52 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:25:46 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/14 19:52:27 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/14 20:26:21 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int	ft_isascii(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	if (c >= 0 && c <= 127)
+		return 1;
+	return 0;
 }
 
 // int	main(void)
 // {
 // 	char	c;
 
-// 	c = 'R';
-// 	if (ft_isalpha(c))
-// 		printf("The char '%c' is alphabetic\n", c);
+// 	c = '~';
+// 	if (ft_isascii(c))
+// 		printf("The char '%c' is ascii\n", c);
 // 	else
-// 		printf("The char '%c' is not alphabetic\n", c);
+// 		printf("The char '%c' is not ascii\n", c);
 // }

@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 16:18:52 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:25:46 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/14 23:10:57 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/14 23:22:33 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int	ft_atoi(const char *nptr)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	int	sign;
+	int	nb;
+
+	sign = 1;
+	nb = 0;
+	while (*nptr == 32 || (*nptr >= 9 && *nptr <= 13))
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+			sign *= -1;
+		nptr++;
+	}
+	while (*nptr >= '0' && *nptr <= '9')
+	{
+		nb = (nb * 10) + (*nptr - 48);
+		nptr++;
+	}
+	return (nb * sign);
 }
 
 // int	main(void)
 // {
-// 	char	c;
-
-// 	c = 'R';
-// 	if (ft_isalpha(c))
-// 		printf("The char '%c' is alphabetic\n", c);
-// 	else
-// 		printf("The char '%c' is not alphabetic\n", c);
+// 	char	string[] = "   -1234ab567";
+// 	printf("\nft: %d\n", ft_atoi(string));
+// 	printf("orig: %d\n\n", atoi(string));
 // }

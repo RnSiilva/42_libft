@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 16:18:52 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:25:46 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/14 22:58:01 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/14 23:10:43 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	char	*p;
+	size_t	i;
+	
+	p = (char *)s;
+	i = -1;
+	while (++i < n)
+		p[i] = 0;
 }
 
 // int	main(void)
 // {
-// 	char	c;
-
-// 	c = 'R';
-// 	if (ft_isalpha(c))
-// 		printf("The char '%c' is alphabetic\n", c);
-// 	else
-// 		printf("The char '%c' is not alphabetic\n", c);
+// 	char	str[] = "42School";
+// 	printf("\nbefore ft_bzero: %s\n", str);
+// 	ft_bzero(str, 1);
+// 	printf("after ft_bzero: %s\n\n", str);
 // }

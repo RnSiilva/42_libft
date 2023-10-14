@@ -1,31 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 16:18:52 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:25:46 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/14 23:45:21 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/14 23:59:34 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strdup(const char *s)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	int		i;
+	char	*np;
+
+	np = (char *)malloc(sizeof(char) * strlen(s) + 1);
+	if (!np)
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		np[i] = s[i];
+		i++;
+	}
+	np[i] = '\0';
+	return (np);
 }
 
 // int	main(void)
 // {
-// 	char	c;
+// 	char	*str = "42School";
+// 	char	*str2;
 
-// 	c = 'R';
-// 	if (ft_isalpha(c))
-// 		printf("The char '%c' is alphabetic\n", c);
-// 	else
-// 		printf("The char '%c' is not alphabetic\n", c);
+// 	str2 = ft_strdup(str);
+// 	printf("\n%s\n\n", str2);
+// 	free(str2);
+// 	return (0);
 // }
