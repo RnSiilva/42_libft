@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:07:13 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 01:42:23 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 19:26:04 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 # include <string.h>
 
+/* Libc functions */
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -45,10 +46,33 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *nptr);
 
+/* Additional functions */
+char	**ft_split(char const *s, char c);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+
+char	*ft_itoa(int n);
+
+/* Bonus part */
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
+t_list	*ft_lstnew(void *content);
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
