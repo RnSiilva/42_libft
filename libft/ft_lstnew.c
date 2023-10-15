@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:11:59 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 16:13:04 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 21:08:24 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,21 @@ t_list	*ft_lstnew(void *content)
 
 // int	main(void)
 // {
-// 	char	*str;
+// 	char	*str = "42School";
+// 	int		n[] = {0, 4, 2};
 // 	t_list	*new;
 // 	t_list	*new2;
 
-// 	str = "Renan";
-// 	printf("\n\t>>> TESTING WITH NON-NULL CONTENT <<<\n\n");
+// 	printf("\n\t>>> TESTING WITH STRING <<<\n\n");
 // 	new = ft_lstnew(str);
-// 	printf("The inputed string was: \'%s\'\n", (char *)new->content);
-
-// 	printf("\n\t>>> TESTING WITH NULL CONTENT <<<\n\n");
-// 	new2 = ft_lstnew(NULL);
-// 	printf("The inputed string was: '%s'\n", (char *)new2->content);
+// 	printf("Content in the 'content' field: \'%s\'\n", (char *)new->content);
+// 	printf("Content in the 'next' field: '%s'\n", (char *)new->next);
+// 	printf("\n\t>>> TESTING WITH INT <<<\n\n");
+// 	new2 = ft_lstnew(n);
+// 	printf("Content in the 'content' field: \'%d\'\n",
+// 	((int *)new2->content)[1]);
+// 	printf("Content in the 'next' field: '%s'\n\n", (char *)new2->next);
+// 	free (new);
+// 	free (new2);
+// 	return (0);
 // }
