@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 21:35:20 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 21:51:19 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 02:14:07 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	lens;
 
 	i = 0;
-	lens= 0;
-	ldt = strlen(dst);
-	lsr = strlen(src);
+	lens = 0;
+	ldt = ft_strlen(dst);
+	lsr = ft_strlen(src);
 	if (size > ldt)
 		lens = ldt + lsr;
 	else

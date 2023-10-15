@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 21:21:00 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 21:39:59 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 02:18:34 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t len;
-	size_t i;
+	size_t	len;
+	size_t	i;
 
 	if (!dst || !src)
 		return (0);
-	len = ft_strlen(src);
+	len = strlen(src);
 	i = 0;
 	if (size != 0)
 	{
@@ -40,8 +40,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // 	unsigned int	size;
 
 // 	size = 9;
-// 	printf("src before: %s\ndest before: %s\nsize before:%d\n\n", src, dst, size);
+// 	printf("\nsrc before: %s\ndest before: %s"
+// 	"\nsize before:%d\n\n", src, dst, size);
 // 	size = ft_strlcpy(dst, src, size);
-// 	printf("src after: %s\ndst after: %s\nsize after:%d", src, dst, size);
+// 	printf("src after: %s\ndst after: %s\nsize after:%d\n\n", src, dst, size);
 // 	return (0);
 // }

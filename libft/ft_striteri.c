@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 22:15:38 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:20:40 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/15 03:09:12 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/15 03:26:00 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
-	while (i < n)
+	if (!s || !f)
+		return ;
+	while (s[i])
 	{
-		((unsigned char *)s)[i] = c;
+		f(i, &s[i]);
 		i++;
 	}
-	return (s);
 }
+
+// void ft_change (unsigned int i, char *c)
+// {
+// 	*c = *c - i;
+// }
 
 // int	main(void)
 // {
-// 	char	str[10];
-// 	char	c = '4';
-// 	printf("ft_: %s\n", (char *)ft_memset(str, c, 2));
-// 	printf("orig: %s\n", (char *)memset(str, c, 2));
+// 	char	str[] = "43Ufltus";
+// 	printf("\nOld string: %s\n", str);
+// 	ft_striteri(str, ft_change);
+// 	printf("New string: %s\n\n", str);
+// 	return (0);
 // }

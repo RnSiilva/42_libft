@@ -1,34 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 22:15:38 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:20:40 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/15 02:12:51 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/15 02:34:45 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
+	char	*ptr;
+	int		i;
+	int		j;
 
+	ptr = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!s1 || !s2 || !ptr)
+		return (NULL);
 	i = 0;
-	while (i < n)
+	while (s1[i] != '\0')
 	{
-		((unsigned char *)s)[i] = c;
+		ptr[i] = s1[i];
 		i++;
 	}
-	return (s);
+	j = 0;
+	while (s2[j] != '\0')
+	{
+		ptr[i] = s2[j];
+		i++;
+		j++;
+	}
+	ptr[i] = '\0';
+	return (ptr);
 }
 
 // int	main(void)
 // {
-// 	char	str[10];
-// 	char	c = '4';
-// 	printf("ft_: %s\n", (char *)ft_memset(str, c, 2));
-// 	printf("orig: %s\n", (char *)memset(str, c, 2));
+// 	char	s1[] = "Hello, ";
+// 	char	s2[] = "World!";
+// 	printf("%s", ft_strjoin(s1, s2));
+// 	return (0);
 // }

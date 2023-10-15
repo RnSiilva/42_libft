@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 22:37:43 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 00:39:06 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 02:26:39 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,35 +14,41 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t		i;
+	char		*d;
+	const char	*s;
 
 	if (!dest && !src)
 		return (NULL);
+	d = dest;
+	s = src;
 	i = 0;
-	if ((size_t)dest - (size_t)src < n)
+	if (d > s)
 	{
-		i = n - 1;
-		while (i >= 0 && i < n)
-		{
-			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
-			i--;
-		}
+		i = n;
+		while (--i < n)
+			d[i] = s[i];
 	}
 	else
 	{
 		while (i < n)
 		{
-			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+			d[i] = s[i];
 			i++;
 		}
 	}
 	return (dest);
 }
 
-int	main(void)
-{
-	char	src[20] = "World!";
-	char	dest[20] = "Hello";
-	printf("\n%s\n\n", (char *)ft_memmove(src + 7, src, 7));
-	return (0);
-}
+// int	main(void)
+// {
+// 	char	src[] = "World!";
+// 	char	dest[20] = "Heelooooo";
+// 	printf("\nft_: %s", (char *)ft_memmove(dest, src, 8));
+
+// 	char	src1[] = "World!";
+// 	char	dest1[20] = "Heeloooo";
+// 	printf("\norig: %s\n\n", (char *)memmove(dest1, src1, 8));
+
+// 	return (0);
+// }

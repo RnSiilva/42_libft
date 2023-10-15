@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 22:15:38 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:20:40 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/15 02:35:19 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/15 03:06:29 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
+	char	*str;
+	char	*start;
+	char	*end;
 
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)s)[i] = c;
-		i++;
-	}
-	return (s);
+	if (!s1 || !set)
+		return (NULL);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	i = ft_strlen(s1);
+	while (i && ft_strchr(set, s1[i]))
+		i--;
+	str = ft_substr(s1, 0, i + 1);
+	if (!str)
+		return (NULL);
+	return (str);
 }
 
-// int	main(void)
+// int	main(void) 
 // {
-// 	char	str[10];
-// 	char	c = '4';
-// 	printf("ft_: %s\n", (char *)ft_memset(str, c, 2));
-// 	printf("orig: %s\n", (char *)memset(str, c, 2));
+//     const char	str[] = "   Hello, World!   ";
+//     printf("%s", ft_strtrim(str, " "));
+//     return 0;
 // }

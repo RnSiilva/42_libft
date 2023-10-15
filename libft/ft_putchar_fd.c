@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 22:15:38 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:20:40 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/15 03:27:55 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/15 03:30:35 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)s)[i] = c;
-		i++;
-	}
-	return (s);
+	write(fd, &c, 1);
 }
 
 // int	main(void)
 // {
-// 	char	str[10];
-// 	char	c = '4';
-// 	printf("ft_: %s\n", (char *)ft_memset(str, c, 2));
-// 	printf("orig: %s\n", (char *)memset(str, c, 2));
+// 	ft_putchar_fd('R', 1);
 // }

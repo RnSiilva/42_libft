@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 22:15:38 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:20:40 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/15 03:32:02 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/15 03:33:58 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
+	size_t	len;
 
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)s)[i] = c;
-		i++;
-	}
-	return (s);
+	len = strlen(s);
+	write(fd, s, len);
+	write(fd, "\n", 1);
 }
 
 // int	main(void)
 // {
-// 	char	str[10];
-// 	char	c = '4';
-// 	printf("ft_: %s\n", (char *)ft_memset(str, c, 2));
-// 	printf("orig: %s\n", (char *)memset(str, c, 2));
+// 	ft_putendl_fd("42School", 1);
 // }

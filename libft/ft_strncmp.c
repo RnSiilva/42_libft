@@ -6,12 +6,11 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 21:10:16 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 21:20:25 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 01:43:04 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

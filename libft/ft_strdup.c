@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 23:45:21 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 23:59:34 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/15 01:43:54 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *s)
 	int		i;
 	char	*np;
 
-	np = (char *)malloc(sizeof(char) * strlen(s) + 1);
+	np = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!np)
 		return (NULL);
 	i = 0;

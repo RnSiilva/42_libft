@@ -1,36 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 22:46:30 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:23:41 by resilva          ###   ########.fr       */
+/*   Created: 2023/10/15 03:06:48 by resilva           #+#    #+#             */
+/*   Updated: 2023/10/15 03:26:56 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	size_t	len;
 	size_t	i;
+	char	*result;
 
 	i = 0;
-	while (i < n)
+	len = strlen(s);
+	result = (char *)malloc(sizeof(char) * (len + 1));
+	if (!result)
+		return (NULL);
+	while (i < len)
 	{
-		if (((unsigned char *)s)[i] == (unsigned char)c)
-			return ((void *)(s + i));
+		result[i] = f(i, s[i]);
 		i++;
 	}
-	return (NULL);
+	result[len] = '\0';
+	return (result);
 }
+
+// char	ft_change(unsigned int i, char c)
+// {
+// 	c = c - 1;
+// 	return (c);
+// }
 
 // int	main(void)
 // {
-// 	char	str[] = "42School42";
-// 	char	str2[] = "42School42";
-// 	printf("ft_: %s\n", (char *)(ft_memchr(str, 'S', 8)));
-// 	printf("orig: %s\n", (char *)(memchr(str2, 'S', 8)));
+// 	char	*str = "53Tdippm";
+// 	printf("\nOld string: %s\nNew string: %s\n\n", 
+// 	str, ft_strmapi(str, ft_change));
 // 	return (0);
 // }
