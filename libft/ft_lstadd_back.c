@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:40:56 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 17:15:10 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/16 00:00:57 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	t_list	*no2;
 // 	t_list	*no3;
 
-// 	no1 = ft_lstnew("Tail");
-// 	no2 = ft_lstnew("Body");
-// 	no3 = ft_lstnew("Head");
+// 	no1 = ft_lstnew(strdup("Tail"));
+// 	no2 = ft_lstnew(strdup("Body"));
+// 	no3 = ft_lstnew(strdup("Head"));
 // 	ft_lstadd_back(&l, no3);
 // 	ft_lstadd_back(&l, no2);
 // 	ft_lstadd_back(&l, no1);
