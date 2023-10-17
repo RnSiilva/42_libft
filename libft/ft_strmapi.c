@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 03:06:48 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 03:26:56 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:38:48 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Applies a custom function to each character in a string, creates a new one.
+RETURN : The new modified new.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 21:35:20 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:14:07 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:29:30 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Concatenates strings with additional control over destination size.
+RETURN : Total size of the resulting string after concatenation.
+*/
 
 #include "libft.h"
 

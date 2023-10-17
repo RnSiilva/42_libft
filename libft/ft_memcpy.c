@@ -6,15 +6,21 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 22:30:33 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 22:37:19 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:55:08 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Copies a block of memory from a source to a destination(can overlay data).
+RETURN : A pointer to destiny.
+*/
 
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	if (!dest && !src)
 		return (NULL);

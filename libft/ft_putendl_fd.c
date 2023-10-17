@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 03:32:02 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 03:33:58 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 19:28:49 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Writes a string followed by a newline to a file associated with a 'fd'.
+RETURN : None.
+*/
 
 #include "libft.h"
 

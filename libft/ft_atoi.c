@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 23:10:57 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 23:22:33 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:22:51 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: stdlib.h
+DEF: Converts a string to int.
+RETURN : The converted value(int).
+*/
 
 #include "libft.h"
 

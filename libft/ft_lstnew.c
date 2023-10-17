@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:11:59 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 21:08:24 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:37:57 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Creates a new node for a linked list.
+RETURN : The new node.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 22:58:01 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:22:20 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:05:22 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: strings.h
+DEF: Fill a memory block with zeros.
+RETURN : None.
+*/
 
 #include "libft.h"
 

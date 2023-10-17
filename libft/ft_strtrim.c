@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 02:35:19 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 03:06:29 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 19:10:32 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Removes specified character from the beginning and end of a string.
+RETURN : The new string without the specified character.
+*/
 
 #include "libft.h"
 
@@ -16,8 +21,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	char	*str;
-	char	*start;
-	char	*end;
 
 	if (!s1 || !set)
 		return (NULL);

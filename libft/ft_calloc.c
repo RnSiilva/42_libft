@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 23:23:37 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 23:46:14 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:12:21 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: stdlib.h
+DEF: Allocate and initialize a block of memory for an array.
+RETURN : A pointer (void) to allocated memory.
+*/
 
 #include "libft.h"
 

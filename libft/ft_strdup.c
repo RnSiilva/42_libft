@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 23:45:21 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 01:43:54 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:18:56 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Creates a duplicate copy of a string(with allocated memory).
+RETURN : A pointer to the new duplicated string.
+*/
 
 #include "libft.h"
 

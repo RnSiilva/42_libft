@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:22:12 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:26:27 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:19:19 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: ctype.h
+DEF: Checks for a digit character.
+RETURN : Positive number if true, and zero if false.
+*/
 
 #include "libft.h"
 

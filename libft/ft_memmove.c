@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 22:37:43 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:26:39 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:56:15 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Copies a block of memory from a source to a destination(Does not overlap).
+RETURN : A pointer to destiny.
+*/
 
 #include "libft.h"
 

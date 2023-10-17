@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:40:56 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/16 00:00:57 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:24:14 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Adds a new element to the end of a linked list.
+RETURN : None.
+*/
 
 #include "libft.h"
 
@@ -26,7 +31,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		while (last->next)
 			last = last->next;
 		last->next = new;
-		new->next = NULL;
 	}
 }
 

@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 03:32:13 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 19:12:54 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 19:31:07 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Writes a int to a file associated with a 'fd'.
+RETURN : None.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 21:10:16 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 01:43:04 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:40:44 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Compares the fisrt 'n' characters of two strings.
+RETURN : The difference of s1 and s2 (numerically), and zero if they are equal.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 19:54:06 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:19:40 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:19:51 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: ctype.h
+DEF: Checks for any printable character, including space.
+RETURN : Positive number if true, and zero if false.
+*/
 
 #include "libft.h"
 

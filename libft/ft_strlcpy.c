@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 21:21:00 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:18:34 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:34:48 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Copies a source string to a destination string, controlling the dest size.
+RETURN : Size of the source string.
+*/
 
 #include "libft.h"
 
@@ -17,13 +23,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	len;
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
-	len = strlen(src);
+	len = ft_strlen(src);
 	i = 0;
 	if (size != 0)
 	{
-		while (src[i] != '\0' && i < (size - 1))
+		while (src[i] != '\0' && i < size - 1)
 		{
 			dst[i] = src[i];
 			i++;

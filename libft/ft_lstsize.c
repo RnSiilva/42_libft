@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:16:35 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 16:16:55 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:39:07 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Counts the number of elements in a linked list.
+RETURN : The number of elements.
+*/
 
 #include "libft.h"
 

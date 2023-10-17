@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:28:00 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 17:15:19 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:34:47 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Search for the last node in the list.
+RETURN : A pointer to the last node found.
+*/
 
 #include "libft.h"
 

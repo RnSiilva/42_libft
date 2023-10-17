@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 03:09:12 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 03:26:00 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:20:50 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Applies a custom function to each character in a string.
+RETURN : None.
+*/
 
 #include "libft.h"
 

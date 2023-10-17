@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 20:19:13 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 20:28:06 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 19:13:56 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: ctype.h
+DEF: Converts a lowercase character to upper
+RETURN : The characater in upper case
+*/
 
 #include "libft.h"
 

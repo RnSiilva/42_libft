@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:15:01 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/14 16:17:49 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:24:47 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Adds a new element to the beginning of a linked list.
+RETURN : None.
+*/
 
 #include "libft.h"
 

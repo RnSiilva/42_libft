@@ -6,16 +6,21 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 00:02:05 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/16 02:19:58 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:27:01 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Deletes and frees the memory of a node and all its successors.
+RETURN : None.
+*/
 
 #include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
-	
+
 	if (!lst || !del)
 		return ;
 	while (*lst)
@@ -40,13 +45,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 // int	main(void)
 // {
 // 	t_list	*lst;
-	
+
 // 	lst = ft_lstnew(strdup("node1"));
 // 	lst->next = ft_lstnew(strdup("node2"));
 // 	lst->next->next = ft_lstnew(strdup("node3"));
 // 	lst->next->next->next = ft_lstnew(strdup("node4"));
 // 	ft_lstclear(&(lst), ft_delete);
-	
+
 // 	if (lst)
 // 	{
 // 		printf("\nThese nodes have not deallocated:\n");

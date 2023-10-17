@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 02:12:51 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:34:45 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:22:58 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Concatenates two string into a single new string(with allocated memory).
+RETURN : Pointer to the new string.
+*/
 
 #include "libft.h"
 

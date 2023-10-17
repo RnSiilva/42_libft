@@ -6,9 +6,15 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 22:46:30 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 02:23:41 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 17:43:26 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+LIBRARY: string.h
+DEF: Search for the first occurrence of a specific byte in a 'block of memory'.
+RETURN : A pointer to the position where the byte was first found, or 'NULL'.
+*/
 
 #include "libft.h"
 

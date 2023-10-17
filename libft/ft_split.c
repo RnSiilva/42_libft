@@ -6,9 +6,14 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 03:47:28 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/15 04:09:21 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 18:09:28 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+DEF: Splits a strig into substrings based on a delimiter character.
+RETURN : Resulting array of strings.
+*/
 
 #include "libft.h"
 
@@ -43,9 +48,12 @@ static int	ft_count_subs(char const *s, char c)
 	count = 0;
 	while (*s)
 	{
-		if (*s == c)
+		while (*s == c)
+			s++;
+		if (*s)
 			count++;
-		s++;
+		while (*s && *s != c)
+			s++;
 	}
 	return (count);
 }
@@ -57,7 +65,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	size = ft_count_subs(s, c) + 1;
+	size = ft_count_subs(s, c);
 	result = (char **)malloc(sizeof(char *) * (size + 1));
 	if (!result)
 		return (NULL);
