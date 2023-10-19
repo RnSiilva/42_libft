@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 16:15:01 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/17 17:24:47 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/18 16:16:27 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,26 +48,26 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	return (0);
 // }
 
-// /*int	main(void)
-// {
-// 	char	*str = "Renan";
-// 	t_list	*l = NULL;
+// // /*int	main(void)
+// // {
+// // 	char	*str = "Renan";
+// // 	t_list	*l = NULL;
 
-// 	t_list	*elemento1 = (t_list *)malloc(sizeof(t_list));
-// 	elemento1->content = "Primeiro";
-// 	elemento1->next = NULL;
-// 	ft_lstadd_front(&l, elemento1);
+// // 	t_list	*elemento1 = (t_list *)malloc(sizeof(t_list));
+// // 	elemento1->content = "Primeiro";
+// // 	elemento1->next = NULL;
+// // 	ft_lstadd_front(&l, elemento1);
 
-// 	t_list *elemento2 = (t_list *)malloc(sizeof(t_list));
-// 	elemento2->content = "Segundo";
-// 	elemento2->next = NULL;
-// 	ft_lstadd_front(&l, elemento2);
+// // 	t_list *elemento2 = (t_list *)malloc(sizeof(t_list));
+// // 	elemento2->content = "Segundo";
+// // 	elemento2->next = NULL;
+// // 	ft_lstadd_front(&l, elemento2);
 
-// 	t_list *atual = l;
-// 	while (atual)
-// 	{
-// 		printf("%s\n", (char *)atual->content);
-// 		atual = atual->next;
-// 	}
-// 	return (0);
-// }*/
+// // 	t_list *atual = l;
+// // 	while (atual)
+// // 	{
+// // 		printf("%s\n", (char *)atual->content);
+// // 		atual = atual->next;
+// // 	}
+// // 	return (0);
+// // }*/

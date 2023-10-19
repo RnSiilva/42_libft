@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 03:32:02 by resilva           #+#    #+#             */
-/*   Updated: 2023/10/17 19:28:49 by resilva          ###   ########.fr       */
+/*   Updated: 2023/10/17 22:14:18 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	len;
 
-	len = strlen(s);
+	len = ft_strlen(s);
 	write(fd, s, len);
 	write(fd, "\n", 1);
 }
