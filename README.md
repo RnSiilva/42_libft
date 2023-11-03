@@ -18,12 +18,14 @@
 	<span> · </span>
 	<a href="#%EF%B8%8F-usage">Usage</a>
 	<span> · </span>
+	<a href="#%EF%B8%8F-bonus">Bonus</a>
+	<span> · </span>
 	<a href="#-testing">Testing</a>
 </h3>
 
 ---
 
-## 💡 About
+## 💡 About the project
 
 > _The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects._
 
@@ -71,6 +73,12 @@ To use the library functions in your code, simply include its header:
 #include "libft.h"
 ```
 ---
+## 🌟 Bonus
+
+The project includes a bonus version of libft, which includes functions that address structures and linked lists.
+
+To test the bonus just run the make command as stated above.
+
 ## Grade: 125 / 100
 
 ## 📋 Testing
